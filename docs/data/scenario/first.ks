@@ -158,6 +158,8 @@
 ;彼女のステファニーの定義
 [chara_new name="stf" storage="bosabosa_syomen_stefany.png" jname="ステフ"]
 [chara_show name="stf"]
+;ステフの表情の登録
+[chara_face name="stf" face="megami" storage="megami.png"]
 
 #stf
 相も変わらずここで時間を潰しているのね。[l][r]
@@ -357,21 +359,21 @@
 私が君を乗り越えたとき！[l][r]
 [cm]
 #garoa:kakusei
-この女は殺す！[l][r]
+この女は殺す![l][r]
 [chara_hide name="stf" ]
 
 #
 [cm]
-「もう喋らなくていいよ。お前。」[l][r]
+「もう[l]喋らなくていいよ。お前。」[l][r]
 お前の名前も、[l]動機も[l]、道理も[l][r]
 「全て必要ない。」[l][r]
 [cm]
 
 #garoa:kakusei
 そうさ。[l][r]
-我々の間に[l]、言葉は不要サ。[l][r]
-始めよう！[l]
-女をかけた、このつまらない戦いを！！！！[l][r]
+我々の間に[l]、言葉は不要なんだよ。[l][r]
+始めようか。[l]
+女をかけた、このつまらない決闘を！！！！[l][r]
 [cm]
 [jump target=*tag_L1]
 
@@ -443,7 +445,7 @@
 
 #garoa:kakusei
     
-Q.　君が授かった公式のうち、もっとも精度が高いのはどれだい？[l][r]
+Q.　πの近似値として最も精度が高いのはどれだい？[l][r]
 [cm]
 
 [locate x=100 y=100]
@@ -453,11 +455,20 @@ Q.　君が授かった公式のうち、もっとも精度が高いのはどれ
 [button graphic="Q1_batu2.png" target=*tag_dead]
 
 [locate x=700 y=100]
-[button graphic="Q1_batu3.png" target=*true_end]
+[button graphic="Q1_batu3.png" target=*go1]
 [s]
 
 
+*go1
+[cm]
+#garoa:kakusei
 
+Q.　体K=Q(\sqrt(2))について。Q上のガロア群G=Gal(K/Q)はどの群と同型？[l][r]
+
+[link target=*true_end1] →C2(位数2の巡回群)。[endlink][r]
+[link target=*tag_dead] →C3(位数4の巡回群)。[endlink][r]
+[link target=*tag_dead] →C4(位数4の巡回群)。[endlink][r]
+[s]
 
 *tag_L2
 [position layer=message0 width=1080 height=190 top=482 left=100 ]
@@ -467,11 +478,39 @@ Q.　君が授かった公式のうち、もっとも精度が高いのはどれ
 [eval exp="$('.chara_name_area').css('pointer-events','none')"]
 [cm]
 
+#garoa:kakusei
+    
+Q.　πの近似値として最も精度が高いのはどれだい？[l][r]
+[cm]
+
+[locate x=100 y=100]
+[button graphic="Q1_batu1.png" target=*tag_dead]
+
+[locate x=400 y=100]
+[button graphic="Q1_batu2.png" target=*tag_dead]
+
+[locate x=700 y=100]
+[button graphic="Q1_batu3.png" target=*go2]
+[s]
+
+*go2
+[cm]
+#garoa:kakusei
+
+Q.　体L=Q(\sqrt【3】{2})について。ガロア群G=Gal(L/Q)の位数は？[l][r]
+
+[link target=*true_end2] →1[endlink][r]
+[link target=*tag_dead] →2[endlink][r]
+[link target=*tag_dead] →3[endlink][r]
+[s]
 
 
 *tag_dead
+[cm]
+[chara_hide name="garoa" ]
 [freeimage layer="base"]
-失敗だ、くそ女神。[l][r]
+#
+失敗だ、女神様。[l][r]
 [chara_show name="stf"]
 [chara_hide name="stf" ]
 [cm]
@@ -480,6 +519,119 @@ Q.　君が授かった公式のうち、もっとも精度が高いのはどれ
 [jump target=*start]
 
 
-*true_end
+*true_end2
 #garoa:nihil
+[cm]
 私の負けだ。[l][r]
+どうやら私の授かった"真理"も、後世に受け継がれていたらしい。[l][r]
+[cm]
+
+#
+「授かった[l]、だと？」[l][r]
+何を言っている。[l]まさかこいつも俺と同じ祝福を受けているのか？[l][r]
+[cm]
+
+#
+「お前は一体[l]何者なんだ。」[l][r]
+[cm]
+
+#garoa
+私はエコー。[l][r]
+君が生まれるずっと前に、数の真理を目指したものの残響。[l][r]
+道半ばで敗れたことへの未練...[l][r]
+
+[cm]
+#garoa:nihil
+[chara_hide name="garoa" ]
+君は、[l]抗えよ。運命に。[l][r]
+[cm]
+
+#
+.....[l]
+あいつが消えるのと同時に、突如意識が朦朧とする。[l][r]
+しかし...[l]まだ気を失うわけにはいかない。[l][r]
+彼女のもとにいかなければ...[l][r]
+[cm]
+
+[chara_show name="stf"]
+[cm]
+
+#stf
+必要ないわ。[l][r]
+テストは終了したもの。[l][r]
+[cm]
+
+#stf:megami
+[font shadow="0xFF0000"]あのときは失敗してしまったけれど。[l][r][resetfont]
+もう器を壊すようなことはしないわ。[l][r]
+[cm]
+
+[freeimage layer="base"]
+それじゃあ、今後とも宜しく。[l][r]
+『***』[l][r]
+いえ、[l]
+"数学の魔術師さん。"[l][r]
+[chara_hide name="stf" ]
+[cm]
+#
+【END】[l][r]
+
+[jump target=*start]
+
+
+*true_end1
+#garoa:nihil
+[cm]
+私の負けだ。[l][r]
+どうやら私の授かった"真理"も、後世に受け継がれていたらしい。[l][r]
+[cm]
+
+#
+「授かった[l]、だと？」[l][r]
+何を言っている。[l]まさかこいつも俺と同じ祝福を受けているのか？[l][r]
+[cm]
+
+#
+「お前は一体[l]何者なんだ。」[l][r]
+[cm]
+
+#garoa
+私はエコー。[l][r]
+君が生まれるずっと前に、数の真理を目指したものの残響。[l][r]
+道半ばで敗れたことへの未練...[l][r]
+
+[cm]
+#garoa:nihil
+[chara_hide name="garoa" ]
+夢の世界で、[l]また会おう。[l][r]
+[cm]
+
+#
+.....[l]
+あいつが消えるのと同時に、突如意識が朦朧とする。[l][r]
+
+[chara_show name="stf"]
+[cm]
+
+#stf
+面白いショーだったわ。[l][r]
+あなたはやはり優秀な器。[l][r]
+半世紀待っただけのことはあるわね。[l][r]
+[cm]
+
+#stf:megami
+それじゃあ、今後とも宜しく。[l][r]
+『***』[l][r]
+[freeimage layer="base"]
+いえ、[l]
+"数学の魔術師さん。"[l][r]
+[chara_hide name="stf" ]
+#
+[cm]
+【END】[l][r]
+
+[jump target=*start]
+
+
+
+
