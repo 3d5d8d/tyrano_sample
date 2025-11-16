@@ -3,7 +3,7 @@
 ;メッセージレイヤを非表示にしておく
 @layopt layer=message0 visible=false
 
-[title name="ここにはなにもないよ"]
+[title name="ここにはなにもないわ"]
 
 ;背景画像を設定
 [image layer="base" page="fore" storage=back.jpg]
@@ -31,7 +31,7 @@
 @layopt layer=message0 visible=true
 
 
-[title name="ここにはなにもないよ"]
+[title name="ここにはなにもないわ"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
@@ -347,6 +347,7 @@
 「なぜそこに彼女がいる...!」[l][r]
 [cm]
 [chara_show name="stf"]
+頭が真っ白になる。[l][r]
 なぜ彼女がここにいる。[l][r]
 彼女が他の男に[l]
 拘束されているこの状況だけで[l][r]
@@ -362,19 +363,29 @@
 この女は殺す![l][r]
 [chara_hide name="stf" ]
 
-#
 [cm]
-「もう[l]喋らなくていいよ。お前。」[l][r]
-お前の名前も、[l]動機も[l]、道理も[l][r]
-「全て必要ない。」[l][r]
+#
+乗り越える？[l][r]
+まるで以前から俺を知っているような[l]...[l][r]
+いや、問題はそこじゃない。[l][r]
+[cm]
+彼女を救出することに集中しろ。[l][r]
+怒りも、混乱も、余計な思考も必要ない。[l][r]
+やつを倒す方法を考えなくては。[l][r]
+[cm]
+「なんだ？[l]殴り合いでも始める気か？」[l][r]
+なんとか言葉を絞り出す。[l][r]
+これが今の俺の精一杯の言葉。[l][r]
 [cm]
 
 #garoa:kakusei
-そうさ。[l][r]
-我々の間に[l]、言葉は不要なんだよ。[l][r]
-始めようか。[l]
-女をかけた、このつまらない決闘を！！！！[l][r]
+まさか。[l]我々の武器は拳じゃない。[l][r]
+もうそんな時代じゃあない。[l][r]
+...[l]数だよ。[l]証明だよ。[l]
 [cm]
+君もそうだろう？[l][r]
+女神に"祝福"を与えられた者同士の、これが正しい決闘さ!!!!!
+
 [jump target=*tag_L1]
 
 
@@ -408,8 +419,11 @@
 [chara_show name="stf"]
 なぜ彼女がここにいる。[l][r]
 彼女が他の男に[l]
-拘束されているこの状況だけで[l][r]
-この男と戦う動機としては十分だった。[l][r]
+拘束されているこの状況だけで―[l][r]
+[cm]
+脳が、[l]瞳孔が[l]、胸の奥が[l]、沸騰する。[l][r]
+理屈なんていらなかった。[l][r]
+この男と戦う動機としては[l]十分だった。[l][r]
 [cm]
 
 #garoa:syani
@@ -466,7 +480,7 @@ Q.　πの近似値として最も精度が高いのはどれだい？[l][r]
 Q.　体K=Q(\sqrt(2))について。Q上のガロア群G=Gal(K/Q)はどの群と同型？[l][r]
 
 [link target=*true_end1] →C2(位数2の巡回群)。[endlink][r]
-[link target=*tag_dead] →C3(位数4の巡回群)。[endlink][r]
+[link target=*tag_dead] →C3(位数3の巡回群)。[endlink][r]
 [link target=*tag_dead] →C4(位数4の巡回群)。[endlink][r]
 [s]
 
@@ -567,7 +581,7 @@ Q.　体L=Q(\sqrt【3】{2})について。ガロア群G=Gal(L/Q)の位数は？
 [cm]
 
 [freeimage layer="base"]
-それじゃあ、今後とも宜しく。[l][r]
+あなたは"必定"を書き換えられる？[l][r]
 『***』[l][r]
 いえ、[l]
 "数学の魔術師さん。"[l][r]
@@ -620,7 +634,7 @@ Q.　体L=Q(\sqrt【3】{2})について。ガロア群G=Gal(L/Q)の位数は？
 [cm]
 
 #stf:megami
-それじゃあ、今後とも宜しく。[l][r]
+次の必定も、乗り越えて魅せて。[l][r]
 『***』[l][r]
 [freeimage layer="base"]
 いえ、[l]
@@ -631,7 +645,3 @@ Q.　体L=Q(\sqrt【3】{2})について。ガロア群G=Gal(L/Q)の位数は？
 【END】[l][r]
 
 [jump target=*start]
-
-
-
-
