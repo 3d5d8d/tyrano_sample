@@ -266,7 +266,7 @@
 
 
 [position layer=message0 width=1080 height=190 top=482 left=100 ]
-[bg time="2000" bg storage="_single_room3_4.jpg" method="fadeIn"]
+[bg time="2000" bg storage="single_room3_4.jpg" method="fadeIn"]
 [ptext name="chara_name_area" layer=message0 width="200" color=white x=100 y=445 size=30]
 [chara_config ptext="chara_name_area"]
 [eval exp="$('.chara_name_area').css('pointer-events','none')"]
@@ -288,7 +288,7 @@
 [cm]
 
 [position layer=message0 width=1080 height=190 top=482 left=100 ]
-[bg time="4000" bg storage="_school_rooftop_1.jpg" method="fadeIn"]
+[bg time="4000" bg storage="school_rooftop_1.jpg" method="fadeIn"]
 [ptext name="chara_name_area" layer=message0 width="200" color=white x=100 y=445 size=30]
 [chara_config ptext="chara_name_area"]
 [eval exp="$('.chara_name_area').css('pointer-events','none')"]
@@ -307,7 +307,7 @@
 
 *tag_S8
 [position layer=message0 width=1080 height=190 top=482 left=100 ]
-[bg time="2000" bg storage="_cultural_club_room_4.jpg" method="lightSpeedIn"]
+[bg time="2000" bg storage="cultural_club_room_4.jpg" method="lightSpeedIn"]
 [ptext name="chara_name_area" layer=message0 width="200" color=white x=100 y=445 size=30]
 [chara_config ptext="chara_name_area"]
 [eval exp="$('.chara_name_area').css('pointer-events','none')"]
@@ -324,7 +324,7 @@
 
 *tag_S81
 [position layer=message0 width=1080 height=190 top=482 left=100 ]
-[bg time="2000" bg storage="_school_rooftop_3.jpg" method="fadeIn"]
+[bg time="2000" bg storage="school_rooftop_3.jpg" method="fadeIn"]
 [ptext name="chara_name_area" layer=message0 width="200" color=white x=100 y=445 size=30]
 [chara_config ptext="chara_name_area"]
 [eval exp="$('.chara_name_area').css('pointer-events','none')"]
@@ -380,7 +380,7 @@
 
 *tag_S9
 [position layer=message0 width=1080 height=190 top=482 left=100 ]
-[bg time="2000" bg storage="_school_rooftop_2.jpg" method="fadeIn"]
+[bg time="2000" bg storage="school_rooftop_2.jpg" method="fadeIn"]
 [ptext name="chara_name_area" layer=message0 width="200" color=white x=100 y=445 size=30]
 [chara_config ptext="chara_name_area"]
 [eval exp="$('.chara_name_area').css('pointer-events','none')"]
@@ -437,7 +437,7 @@
 
 *tag_L1
 [position layer=message0 width=1080 height=190 top=482 left=100 ]
-[bg time="2000" bg storage="_school_rooftop_3.jpg" method="fadeIn"]
+[bg time="2000" bg storage="school_rooftop_3.jpg" method="fadeIn"]
 [ptext name="chara_name_area" layer=message0 width="200" color=white x=100 y=445 size=30]
 [chara_config ptext="chara_name_area"]
 [eval exp="$('.chara_name_area').css('pointer-events','none')"]
@@ -472,7 +472,7 @@ Q.　体K=Q(\sqrt(2))について。Q上のガロア群G=Gal(K/Q)はどの群と
 
 *tag_L2
 [position layer=message0 width=1080 height=190 top=482 left=100 ]
-[bg time="2000" bg storage="_school_rooftop_2.jpg" method="fadeIn"]
+[bg time="2000" bg storage="school_rooftop_2.jpg" method="fadeIn"]
 [ptext name="chara_name_area" layer=message0 width="200" color=white x=100 y=445 size=30]
 [chara_config ptext="chara_name_area"]
 [eval exp="$('.chara_name_area').css('pointer-events','none')"]
